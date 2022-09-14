@@ -1,0 +1,35 @@
+<html>
+<head>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
+<style>
+    .statusRed {
+    background-color: red;
+    color: white;
+    }
+    .statusGreen {
+    background-color: green;
+    color: black;
+    }
+    .statusGrey {
+    background-color: grey;
+    color: black;
+    }
+</style>
+</head>
+<body>
+<!--<button id="socks.shirt.pants" type='button'> dummy text here</button> -->
+<!--<div id='response'></div>-->
+<div class='login'>{{logged_username}}</div>
+<p>Current tiket status:</p>
+<div class='{{status_class}}'>{{status_text}}</div>
+<form method="post">
+    <select name = "dropdown">
+        <option value = "active">active</option>
+        <option value = "used">used</option>
+        <option value = "revoked">revoked</option>
+    </select>
+    <input type="hidden" name="uuid" value='{{uuid}}'>
+    <input type=submit value='Change status'>
+</form>
+</body>
+</html>

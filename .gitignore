@@ -1,0 +1,8 @@
+venv
+.idea
+config.py
+*.db
+*.zip
+qrCodes/*.png
+.DS_Store
+log.log
